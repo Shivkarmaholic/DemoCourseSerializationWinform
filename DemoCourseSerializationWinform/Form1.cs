@@ -144,7 +144,7 @@ namespace DemoCourseSerializationWinform
             FileStream fs = new FileStream("d:\\democoursejson", FileMode.Open, FileAccess.Read);            
             Course c = JsonSerializer. Deserialize<Course>(fs);
             txt_CourseId.Text = Convert.ToString(c.courseId);
-            txt_CourseName.Text = c.courseName;
+            txt_CourseName.Text = c.courseName; 
             txt_CourseFees.Text = Convert.ToString(c.fees);
         }
     }
